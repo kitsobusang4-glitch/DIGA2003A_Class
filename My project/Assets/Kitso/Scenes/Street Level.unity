@@ -290,7 +290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   speed: 9
-  rb: {fileID: 0}
+  rb: {fileID: 155233885}
 --- !u!1 &241219830
 GameObject:
   m_ObjectHideFlags: 0
