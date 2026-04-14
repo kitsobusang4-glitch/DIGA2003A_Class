@@ -214,7 +214,7 @@ MonoBehaviour:
     CustomLookAtTarget: 0
   Lens:
     FieldOfView: 34
-    OrthographicSize: 15
+    OrthographicSize: 10
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -641,7 +641,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.03576088, y: -0.15655136}
+  m_Offset: {x: 0.17054749, y: 0.011928558}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -651,7 +651,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 70.58806, y: 39.41658}
+  m_Size: {x: 58.862038, y: 33.418777}
   m_EdgeRadius: 0
 --- !u!4 &1092461532
 Transform:
@@ -731,7 +731,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 15
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -954,10 +954,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1716244970}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d360283592d845d4fa19a16a087fa649, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b7a54cc850975d418cc2c960fe4d69d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  speed: 10
+  speed: 9
   rb: {fileID: 1716244973}
 --- !u!70 &1716244972
 CapsuleCollider2D:
