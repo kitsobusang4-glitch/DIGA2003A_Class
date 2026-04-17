@@ -6,10 +6,11 @@ using UnityEngine.UI;
 public class PLAYER : MonoBehaviour
 {
     public GameObject dialoguePanel;
-    public Text dialogueText;
+    public TMPro.TextMeshProUGUI dialogueText;
     public string[] dialogue;
     private int index;
 
+    public GameObject contButton;
     public float wordspeed;
     public bool playerIsClose; 
 
@@ -30,6 +31,11 @@ public class PLAYER : MonoBehaviour
             }
 
 
+        }
+
+        if (dialogueText.text  == dialogue[index])
+        {
+            contButton.SetActive(true);
         }
     }
 
@@ -52,6 +58,9 @@ public class PLAYER : MonoBehaviour
 
     public void NextLine()
     {
+
+        contButton.SetActive(false);
+
         if(index  < dialogue.Length -1)
         {
             index++;
