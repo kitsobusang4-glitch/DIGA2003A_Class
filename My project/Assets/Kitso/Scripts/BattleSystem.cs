@@ -24,7 +24,7 @@ public class BattleSystem : MonoBehaviour
     public BattleHUD enemyHUD;
 
     public BattleState state;
-   
+
     void Start()
     {
         state = BattleState.START;
@@ -45,8 +45,15 @@ public class BattleSystem : MonoBehaviour
         enemyHUD.SetHUD(enemyUnit);
 
         state = BattleState.PLAYERTURN;
-        
+        PlayerTurn();
     }
+
+    void PlayerTurn()
+
+    {
+
+        dialogueText.text = "Choose an option";
+            }
     
     IEnumerator PlayerAttack()
     {
