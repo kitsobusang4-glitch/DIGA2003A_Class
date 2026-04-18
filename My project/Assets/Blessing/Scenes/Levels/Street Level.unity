@@ -133,7 +133,6 @@ GameObject:
   - component: {fileID: 359982014}
   - component: {fileID: 359982013}
   - component: {fileID: 359982018}
-  - component: {fileID: 359982019}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -185,12 +184,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0.048800707, y: -0.1386706}
-  m_Size: {x: 2.16, y: 6.7193}
+  m_Size: {x: 2.5, y: 7.99}
   m_Direction: 0
 --- !u!50 &359982015
 Rigidbody2D:
@@ -287,8 +286,8 @@ Transform:
   m_GameObject: {fileID: 359982012}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4868, y: -0.6722, z: 0}
-  m_LocalScale: {x: 1.3435329, y: 1.10943, z: 0.23612124}
+  m_LocalPosition: {x: 6.3, y: 0.8, z: 0}
+  m_LocalScale: {x: 1.302247, y: 1.1624573, z: 0.23612124}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -339,29 +338,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5.26, y: 6.42}
   m_EdgeRadius: 0
---- !u!114 &359982019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 359982012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f22ca7eccddef2b41966f95604fc4b3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PLAYER
-  dialoguePanel: {fileID: 2024348731}
-  dialogueText: {fileID: 1267613010}
-  dialogue:
-  - Oh hey...you look lost.
-  - Are you looking for the shop?
-  - EASY
-  - 'Just keep going straight.                    '
-  - You can't miss it.
-  contButton: {fileID: 555766468}
-  wordspeed: 0.06
-  playerIsClose: 1
 --- !u!1 &380246092
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,7 +372,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -112, y: -75}
+  m_AnchoredPosition: {x: -118, y: -75}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &380246094
@@ -583,13 +559,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 383535365}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.05, y: -7.78, z: 0}
-  m_LocalScale: {x: 0.3189, y: 0.2824, z: 1}
+  m_LocalRotation: {x: 0.22623323, y: 0.14095691, z: 0.048748326, w: 0.9625868}
+  m_LocalPosition: {x: 2.63, y: -12.05, z: 2.2}
+  m_LocalScale: {x: 0.34520924, y: 0.305698, z: 1.0825}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 24.948, y: 18.882, z: 10.012}
 --- !u!1 &555766468
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,7 +649,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 359982019}
+      - m_Target: {fileID: 1693042660}
         m_TargetAssemblyTypeName: PLAYER, Assembly-CSharp
         m_MethodName: NextLine
         m_Mode: 1
@@ -819,7 +795,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &665327190
 RectTransform:
   m_ObjectHideFlags: 0
@@ -827,8 +803,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 665327189}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.017481469, y: -0, z: -0, w: 0.9998472}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -836,10 +812,10 @@ RectTransform:
   - {fileID: 2091200483}
   - {fileID: 2143335181}
   m_Father: {fileID: 2090002851}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -2.003, y: 0, z: 0}
   m_AnchorMin: {x: 0.0826875, y: 0}
   m_AnchorMax: {x: 1, y: 0.374}
-  m_AnchoredPosition: {x: 400.13486, y: 113.999985}
+  m_AnchoredPosition: {x: 251, y: 82}
   m_SizeDelta: {x: -1325.2197, y: -260.8156}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &665327191
@@ -879,81 +855,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 665327189}
-  m_CullTransparentMesh: 1
---- !u!1 &820843494
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 820843495}
-  - component: {fileID: 820843497}
-  - component: {fileID: 820843496}
-  m_Layer: 5
-  m_Name: 'club lady profile image '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &820843495
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 820843494}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1693042659}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 389, y: -49}
-  m_SizeDelta: {x: 114.8119, y: 110.5963}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &820843496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 820843494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 4436691614260262413, guid: e70a6c9667151144aa895f338a1c0753, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &820843497
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 820843494}
   m_CullTransparentMesh: 1
 --- !u!1 &918515526
 GameObject:
@@ -1400,8 +1301,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 88.8688, y: 2.4098}
-  m_SizeDelta: {x: 423.4963, y: 146.82}
+  m_AnchoredPosition: {x: 67.241, y: 2.4098}
+  m_SizeDelta: {x: 380.24, y: 146.82}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1267613010
 MonoBehaviour:
@@ -1423,7 +1324,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: Are you looking for the shop?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1489,7 +1390,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 3.2264404, z: 5.3773193, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1502,81 +1403,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1267613008}
-  m_CullTransparentMesh: 1
---- !u!1 &1277695947
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1277695948}
-  - component: {fileID: 1277695950}
-  - component: {fileID: 1277695949}
-  m_Layer: 5
-  m_Name: 'hobo profile image '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1277695948
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1277695947}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2090002851}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 328, y: -211.54312}
-  m_SizeDelta: {x: 116.9045, y: 101.0593}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1277695949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1277695947}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: -105440470947120157, guid: d4b73ac3eb4690c4a841911f665ec9e3, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1277695950
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1277695947}
   m_CullTransparentMesh: 1
 --- !u!1 &1569373718
 GameObject:
@@ -1612,7 +1438,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.081250004, y: 0.5}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1, y: 2}
+  m_AnchoredPosition: {x: -1.000061, y: 2}
   m_SizeDelta: {x: 16.5, y: 28.9503}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1569373720
@@ -1729,7 +1555,7 @@ GameObject:
   - component: {fileID: 1693042656}
   - component: {fileID: 1693042660}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Canvas club lady
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1811,7 +1637,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2024348732}
-  - {fileID: 820843495}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1834,10 +1659,12 @@ MonoBehaviour:
   dialoguePanel: {fileID: 2024348731}
   dialogueText: {fileID: 1267613010}
   dialogue:
-  - 
-  - 
+  - Are you looking for the shop?
+  - EASY
+  - 'Just keep going straight past my club '
+  - You can't miss it.
   contButton: {fileID: 555766468}
-  wordspeed: 0
+  wordspeed: 0.06
   playerIsClose: 1
 --- !u!1 &1708765374
 GameObject:
@@ -1849,6 +1676,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1708765376}
   - component: {fileID: 1708765375}
+  - component: {fileID: 1708765379}
+  - component: {fileID: 1708765378}
+  - component: {fileID: 1708765377}
+  - component: {fileID: 1708765380}
   m_Layer: 0
   m_Name: ClubLadyNPC_3
   m_TagString: Untagged
@@ -1923,13 +1754,145 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1708765374}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.95, y: 3.68, z: 0}
+  m_LocalRotation: {x: -0, y: -0.015361869, z: -0, w: 0.99988204}
+  m_LocalPosition: {x: 17.34, y: 2.67, z: 0}
   m_LocalScale: {x: 0.28438962, y: 0.25259507, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -1.76, z: 0}
+--- !u!61 &1708765377
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708765374}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 14.031503, y: 25.7}
+    newSize: {x: 14.031503, y: 25.7}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 41.04, y: 36.2}
+  m_EdgeRadius: 0
+--- !u!70 &1708765378
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708765374}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 13.3, y: 30.6}
+  m_Direction: 0
+--- !u!114 &1708765379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708765374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22ca7eccddef2b41966f95604fc4b3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PLAYER
+  dialoguePanel: {fileID: 0}
+  dialogueText: {fileID: 0}
+  dialogue:
+  - Are you looking for the shop?
+  - EASY
+  - Just keep going straight past          my club
+  - You can't miss it.
+  contButton: {fileID: 555766468}
+  wordspeed: 0.06
+  playerIsClose: 1
+--- !u!50 &1708765380
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708765374}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1930855998
 GameObject:
   m_ObjectHideFlags: 0
@@ -2015,8 +1978,8 @@ Transform:
   m_GameObject: {fileID: 1930855998}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0312, y: 0.0592, z: 0}
-  m_LocalScale: {x: 8.911802, y: 7.118855, z: 1}
+  m_LocalPosition: {x: 0.0312, y: -0.1041, z: 0}
+  m_LocalScale: {x: 8.911802, y: 7.195739, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2038,7 +2001,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2024348732
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2135,10 +2098,13 @@ MonoBehaviour:
   dialogueText: {fileID: 2091200485}
   dialogue:
   - 'You''re new here, aren''t you? '
-  - 'Don''t listen to '
-  - 
+  - 'Don''t listen to everyone you see. '
+  - Go straight until you see a bus stop.
+  - You should see a school kid...
+  - Ask him where to go from there
+  - He will tell you the truth
   contButton: {fileID: 2143335177}
-  wordspeed: 0
+  wordspeed: 0.06
   playerIsClose: 1
 --- !u!114 &2090002848
 MonoBehaviour:
@@ -2216,7 +2182,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 665327190}
-  - {fileID: 1277695948}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2424,7 +2389,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 359982019}
+      - m_Target: {fileID: 2090002847}
         m_TargetAssemblyTypeName: PLAYER, Assembly-CSharp
         m_MethodName: NextLine
         m_Mode: 1
@@ -2489,11 +2454,11 @@ RectTransform:
   - {fileID: 1569373719}
   m_Father: {fileID: 665327190}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 108, y: -44}
-  m_SizeDelta: {x: 160, y: 43.9503}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 272.84985, y: -8}
+  m_SizeDelta: {x: 157, y: -28.049698}
+  m_Pivot: {x: 0.05, y: 0.5}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
