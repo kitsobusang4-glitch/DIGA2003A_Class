@@ -28,10 +28,10 @@ public class BattleSystem : MonoBehaviour
     void Start()
     {
         state = BattleState.START;
-        SetupBattle();
+        StartCoroutine(SetupBattle());
     }
 
-    void SetupBattle()
+    IEnumerator SetupBattle()
     {
         GameObject playerGO = Instantiate(playerPrefab, playerBattleStation);
         playerUnit = playerGO.GetComponent<Unit>();
@@ -44,6 +44,8 @@ public class BattleSystem : MonoBehaviour
         playerHUD.SetHUD(playerUnit);
         enemyHUD.SetHUD(enemyUnit);
 
+        yield return new WaitForSeconds(5f);
+
         state = BattleState.PLAYERTURN;
         PlayerTurn();
     }
@@ -51,9 +53,22 @@ public class BattleSystem : MonoBehaviour
     void PlayerTurn()
 
     {
-
         dialogueText.text = "Choose an option";
-            }
+    }
+
+    IEnumerator PlayerHeal()
+    {
+        playerUnit.Heal(15);
+
+        playerHUD.SetHP(playerUnit.currentHP);
+        dialogueText.text = "A sip of the medicine has healed you up!";
+
+        yield return new WaitForSeconds(2f);
+
+        state = BattleState.ENEMYTURN;
+        StartCoroutine(EnemyTurn());
+    }
+
     
     IEnumerator PlayerAttack()
     {
@@ -61,6 +76,7 @@ public class BattleSystem : MonoBehaviour
         bool isDead = enemyUnit.TakeDamage(playerUnit.damage);
 
         enemyHUD.SetHP(enemyUnit.currentHP);
+        dialogueText.text = "The attack is successful";
 
         yield return new WaitForSeconds(2f);
 
@@ -68,6 +84,7 @@ public class BattleSystem : MonoBehaviour
         if (isDead)
         {
             state = BattleState.WON;
+            EndBattle();
            
             //end the battle
         } else
@@ -80,8 +97,10 @@ public class BattleSystem : MonoBehaviour
         // Change state based on what happened
     }
 
+    
     IEnumerator EnemyTurn()
     {
+        dialogueText.text = "The " + enemyUnit.unitName + " attacks!";
         yield return new WaitForSeconds(1f);
 
        bool isDead = playerUnit.TakeDamage(enemyUnit.damage);
@@ -93,14 +112,23 @@ public class BattleSystem : MonoBehaviour
         if (isDead)
         {
             state = BattleState.LOST;
-            
+            EndBattle();
         } else
         {
             state = BattleState.PLAYERTURN;
-            
+            PlayerTurn();
         }
     }
-    
+    void EndBattle()
+    {
+        if (state == BattleState.WON)
+        {
+            dialogueText.text = "You've beaten up the thug, you win!";
+        } else if (state == BattleState.LOST)
+        {
+            dialogueText.text = "The thug has beaten you up, you lose!";
+        }
+    }
     public void OnAttackButton()
     {
         if (state != BattleState.PLAYERTURN)
@@ -108,4 +136,12 @@ public class BattleSystem : MonoBehaviour
 
         StartCoroutine(PlayerAttack());
     }
+    public void OnHealButton()
+    {
+        if (state != BattleState.PLAYERTURN)
+            return;
+
+        StartCoroutine(PlayerHeal());
+    }
 }
+
