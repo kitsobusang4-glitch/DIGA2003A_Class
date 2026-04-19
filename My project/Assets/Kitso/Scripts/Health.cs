@@ -1,7 +1,9 @@
+using System;
 using UnityEngine;
 
 public class Health : MonoBehaviour
 {
+    public static event Action OnPlayerDeath;
     public int health;
     public int maxHealth = 10;
     void Start()
@@ -9,11 +11,7 @@ public class Health : MonoBehaviour
         health = maxHealth;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
     public void TakeDamage(int amount)
     {
@@ -22,6 +20,8 @@ public class Health : MonoBehaviour
         if(health <= 0)
         {
             Destroy(gameObject);
+            Debug.Log("You're dead");
+            OnPlayerDeath?.Invoke();
         }
     }
 }
