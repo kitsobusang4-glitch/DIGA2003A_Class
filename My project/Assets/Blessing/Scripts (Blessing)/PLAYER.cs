@@ -5,6 +5,12 @@ using UnityEngine.UI;
 
 public class PLAYER : MonoBehaviour
 {
+    public PharmacyMechanics pharmacy;
+    public string[] grannyDialogue;
+    public GameObject granny;
+
+    private bool isGrannyDialogue = false;
+
     public GameObject dialoguePanel;
     public TMPro.TextMeshProUGUI dialogueText;
     public string[] dialogue;
@@ -61,7 +67,7 @@ public class PLAYER : MonoBehaviour
 
         contButton.SetActive(false);
 
-        if(index  < dialogue.Length -1)
+        if (index < dialogue.Length - 1)
         {
             index++;
             dialogueText.text = "";
@@ -69,7 +75,31 @@ public class PLAYER : MonoBehaviour
         }
         else
         {
-            zeroText();
+            if (!isGrannyDialogue)
+            {
+                // Switch to granny dialogue
+                dialogue = grannyDialogue;
+                index = 0;
+                isGrannyDialogue = true;
+
+                granny.SetActive(true); //show granny
+
+                dialogueText.text = "";
+                StartCoroutine(Typing());
+
+            }
+            else
+            {
+
+                zeroText();
+
+                if (isGrannyDialogue)
+                {
+                    granny.SetActive(false); // Hide granny here
+                }
+
+                pharmacy.DialogueEnded();
+            }
         }
     }
 
