@@ -33,8 +33,14 @@ EditorBuildSettings:
     path: Assets/Kitso/Scenes/Levels/Traffic Level.unity
     guid: 647d2abdc8139474bb6c9a9bd4231352
   - enabled: 1
+    path: Assets/Kitso/Scenes/Levels/Fight Level.unity
+    guid: 6f3ea09223364ac459c096e01ed6382c
+  - enabled: 1
     path: Assets/Kitso/Scenes/Levels/Maze Level.unity
     guid: 1c76b79fd9304714f89d21839355d6b6
+  - enabled: 1
+    path: Assets/Kitso/Scenes/Levels/Supermarket.unity
+    guid: aa8564898bdf9e446a6242e57932a22c
   - enabled: 1
     path: Assets/Kitso/Scenes/Levels/Fight2.unity
     guid: 01070e0ace51bab42a2f843f7c7223cd
