@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Serialization;
@@ -11,7 +12,8 @@ public class BattleSystem : MonoBehaviour
 {
     public GameObject playerPrefab;
     public GameObject enemyPrefab;
-
+    public static event Action OnPlayerDeath;
+    public static event Action OnEnemyDeath;
     public Transform playerBattleStation;
     public Transform enemyBattleStation;
 
@@ -85,7 +87,8 @@ public class BattleSystem : MonoBehaviour
         {
             state = BattleState.WON;
             EndBattle();
-           
+            OnEnemyDeath?.Invoke();
+
             //end the battle
         } else
         {
@@ -113,6 +116,7 @@ public class BattleSystem : MonoBehaviour
         {
             state = BattleState.LOST;
             EndBattle();
+            OnPlayerDeath?.Invoke();
         } else
         {
             state = BattleState.PLAYERTURN;
