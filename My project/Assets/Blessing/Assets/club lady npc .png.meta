@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 887f0fbafe71cd842a103f0e439b6bd1
+guid: 8e9a25205f9e96e4dac5973865104cb1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5469687753972188915
-    second: thug npc _0
+      213: 4436691614260262413
+    second: club lady npc _0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: thug npc _0
+      name: club lady npc _0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1000
-        height: 1000
+        x: 192
+        y: 182
+        width: 616
+        height: 650
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3f601d7580c38eb40800000000000000
-      internalID: 5469687753972188915
+      spriteID: d06ffed348b429d30800000000000000
+      internalID: 4436691614260262413
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      thug npc _0: 5469687753972188915
+      club lady npc _0: 4436691614260262413
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

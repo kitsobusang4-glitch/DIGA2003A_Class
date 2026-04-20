@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 46ae9e512797fbb478a65c6e40607a7b
+guid: 214b336fdc5d4da448d7f75165b64bbe
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3923999755456531816
-    second: school kid npc _0
+      213: 2476497407801625887
+    second: school kid png _0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: school kid npc _0
+      name: school kid png _0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1000
-        height: 1000
+        x: 144
+        y: 364
+        width: 557
+        height: 623
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 86dc4b2ccf8d47630800000000000000
-      internalID: 3923999755456531816
+      spriteID: f1d013775494e5220800000000000000
+      internalID: 2476497407801625887
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      school kid npc _0: 3923999755456531816
+      school kid png _0: 2476497407801625887
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

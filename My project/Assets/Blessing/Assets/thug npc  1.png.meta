@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3dbe497ee05b3d74d8b55769a704ff8c
+guid: f894f6f39c479a344a58930c15cacb70
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4605657297239430858
-    second: phamist npc _0
+      213: 6914630235538112974
+    second: thug npc  1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: phamist npc _0
+      name: thug npc  1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1000
-        height: 1000
+        x: 166
+        y: 79
+        width: 673
+        height: 868
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ac65427f8e49aef30800000000000000
-      internalID: 4605657297239430858
+      spriteID: ec1cc6e5093b5ff50800000000000000
+      internalID: 6914630235538112974
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      phamist npc _0: 4605657297239430858
+      thug npc  1_0: 6914630235538112974
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

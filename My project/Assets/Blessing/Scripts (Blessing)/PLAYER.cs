@@ -39,7 +39,7 @@ public class PLAYER : MonoBehaviour
 
         }
 
-        if (dialogueText.text  == dialogue[index])
+        if (dialogueText != null && index < dialogue.Length && dialogueText.text == dialogue[index])
         {
             contButton.SetActive(true);
         }
@@ -55,6 +55,8 @@ public class PLAYER : MonoBehaviour
 
     IEnumerator Typing()
     {
+        if (index >=dialogue.Length) yield break;   
+
         foreach(char letter in dialogue[index].ToCharArray())
         {
             dialogueText.text += letter;
@@ -105,8 +107,11 @@ public class PLAYER : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("Something enetered trigger");
+
         if(other.CompareTag("Player"))
         {
+            Debug.Log("Player detected!");
             playerIsClose = true;
         }
     }

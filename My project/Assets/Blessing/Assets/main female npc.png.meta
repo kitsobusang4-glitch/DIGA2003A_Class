@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e70a6c9667151144aa895f338a1c0753
+guid: 6e140627fe9ed3d488dfc5e2d0b71f08
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4436691614260262413
-    second: club lady npc _0
+      213: 8381428415867050617
+    second: main female npc_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: club lady npc _0
+      name: main female npc_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1000
-        height: 1000
+        x: 193
+        y: 129
+        width: 625
+        height: 780
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d06ffed348b429d30800000000000000
-      internalID: 4436691614260262413
+      spriteID: 97ade1eccb0d05470800000000000000
+      internalID: 8381428415867050617
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      club lady npc _0: 4436691614260262413
+      main female npc_0: 8381428415867050617
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
