@@ -60,7 +60,7 @@ public class BattleSystem : MonoBehaviour
 
     IEnumerator PlayerHeal()
     {
-        playerUnit.Heal(25);
+        playerUnit.Heal(40);
 
         playerHUD.SetHP(playerUnit.currentHP);
         dialogueText.text = "A sip of the medicine has healed you up!";

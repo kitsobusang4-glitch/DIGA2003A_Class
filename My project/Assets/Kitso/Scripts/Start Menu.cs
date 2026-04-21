@@ -5,7 +5,13 @@ public class StartMenu : MonoBehaviour
 {
     public void Play()
     {
-        SceneManager.LoadScene("Interlude");
+        SceneManager.LoadScene("Prelude");
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
+
 

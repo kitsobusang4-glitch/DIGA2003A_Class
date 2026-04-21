@@ -31,6 +31,10 @@ public class UISTUFF2 : MonoBehaviour
 
     public void BackToStart()
     {
-        SceneManager.LoadScene("Start Menu");
+        SceneManager.LoadScene("Neighbourhood Level");
+    }
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
