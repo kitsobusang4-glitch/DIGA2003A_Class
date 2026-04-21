@@ -41,7 +41,7 @@ public class BattleSystem : MonoBehaviour
         GameObject enemyGO = Instantiate(enemyPrefab, enemyBattleStation);
         enemyUnit = enemyGO.GetComponent<Unit>();
 
-        dialogueText.text = "A crazy " + enemyUnit.unitName + " wants to pick a fight";
+        dialogueText.text = "The " + enemyUnit.unitName + " saw you leave. Now you must FIGHT";
 
         playerHUD.SetHUD(playerUnit);
         enemyHUD.SetHUD(enemyUnit);
@@ -60,7 +60,7 @@ public class BattleSystem : MonoBehaviour
 
     IEnumerator PlayerHeal()
     {
-        playerUnit.Heal(15);
+        playerUnit.Heal(25);
 
         playerHUD.SetHP(playerUnit.currentHP);
         dialogueText.text = "A sip of the medicine has healed you up!";

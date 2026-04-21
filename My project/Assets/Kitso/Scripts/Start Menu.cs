@@ -5,7 +5,7 @@ public class StartMenu : MonoBehaviour
 {
     public void Play()
     {
-        SceneManager.LoadScene("Neighbourhood");
+        SceneManager.LoadScene("Interlude");
     }
 }
 

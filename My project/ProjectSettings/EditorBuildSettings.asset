@@ -17,32 +17,44 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Settings.unity
     guid: 518ed1b04259eb24584f89fea0a7d08a
-  - enabled: 1
-    path: Assets/Kitso/Scenes/Levels/Start Menu.unity
-    guid: c25d6744e31cc73428806a9a405428f3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Kitso/Scenes/Levels/Neighbourhood.unity
     guid: b117fa529e7e5d440af2caebd4ed356e
-  - enabled: 1
-    path: Assets/Kitso/Scenes/Levels/Street Level.unity
-    guid: 7bac4f9d3f7d84d49af8761ba74c8ab0
-  - enabled: 1
-    path: Assets/Kitso/Scenes/Levels/Bus Stop.unity
-    guid: 09217b9228390bd4e88fc6b7a4ad4d06
-  - enabled: 1
-    path: Assets/Kitso/Scenes/Levels/Traffic Level.unity
-    guid: 647d2abdc8139474bb6c9a9bd4231352
-  - enabled: 1
+  - enabled: 0
     path: Assets/Kitso/Scenes/Levels/Fight Level.unity
     guid: 6f3ea09223364ac459c096e01ed6382c
   - enabled: 1
-    path: Assets/Kitso/Scenes/Levels/Maze Level.unity
+    path: Assets/Kitso/Scenes/Levels/Used/Start Menu.unity
+    guid: c25d6744e31cc73428806a9a405428f3
+  - enabled: 1
+    path: Assets/Blessing/Scenes/Levels/Used/Prelude.unity
+    guid: 273b5e7993e5bf14297e62489eeed515
+  - enabled: 1
+    path: Assets/Blessing/Scenes/Levels/Used/Neighbourhood Level.unity
+    guid: bcd2a874120a19742a2785a953a7a560
+  - enabled: 1
+    path: Assets/Kitso/Scenes/Levels/Used/Street Level.unity
+    guid: 7bac4f9d3f7d84d49af8761ba74c8ab0
+  - enabled: 1
+    path: Assets/Kitso/Scenes/Levels/Used/Bus Stop.unity
+    guid: 09217b9228390bd4e88fc6b7a4ad4d06
+  - enabled: 1
+    path: Assets/Kitso/Scenes/Levels/Used/Traffic Level.unity
+    guid: 647d2abdc8139474bb6c9a9bd4231352
+  - enabled: 1
+    path: Assets/Blessing/Scenes/Levels/Used/Supermarket Level.unity
+    guid: 1142494bb7b9a05498d63566c7c05804
+  - enabled: 1
+    path: Assets/Kitso/Scenes/Levels/Used/Maze Level.unity
     guid: 1c76b79fd9304714f89d21839355d6b6
+  - enabled: 1
+    path: Assets/Blessing/Scenes/Levels/Used/Pharmacy Level.unity
+    guid: a97c292e1b5b57c409735e174ae7e2ea
   - enabled: 1
     path: Assets/Kitso/Scenes/Levels/Supermarket.unity
     guid: aa8564898bdf9e446a6242e57932a22c
   - enabled: 1
-    path: Assets/Kitso/Scenes/Levels/Fight2.unity
+    path: Assets/Kitso/Scenes/Levels/Used/Fight2.unity
     guid: 01070e0ace51bab42a2f843f7c7223cd
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
