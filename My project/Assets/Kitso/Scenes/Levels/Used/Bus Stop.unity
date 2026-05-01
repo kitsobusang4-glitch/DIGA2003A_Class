@@ -457,10 +457,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -909,7 +909,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -375.8402}
+  m_AnchoredPosition: {x: 0, y: 448}
   m_SizeDelta: {x: 902.0518, y: 111.5963}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &503558627
@@ -2086,7 +2086,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10, y: -398}
+  m_AnchoredPosition: {x: 10, y: 425.8402}
   m_SizeDelta: {x: 555.1313, y: 32.2092}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1544696032
@@ -2202,6 +2202,7 @@ GameObject:
   - component: {fileID: 1589791927}
   - component: {fileID: 1589791930}
   - component: {fileID: 1589791931}
+  - component: {fileID: 1589791932}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2359,6 +2360,19 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   CustomBlends: {fileID: 0}
+--- !u!114 &1589791932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589791926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd61e8ad977dd034e9dc95d4d1b25c1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScreenRatio
+  targetAspectRatio: 1.7777778
 --- !u!114 &1649246302 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 143423024827652958, guid: 82b5aa621efc39247bf5499d885715e8, type: 3}
@@ -2460,6 +2474,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2026499579308774233, guid: 82b5aa621efc39247bf5499d885715e8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2576584115955447264, guid: 82b5aa621efc39247bf5499d885715e8, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2576584115955447264, guid: 82b5aa621efc39247bf5499d885715e8, type: 3}
+      propertyPath: m_ScreenMatchMode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4140897644501932597, guid: 82b5aa621efc39247bf5499d885715e8, type: 3}
@@ -2660,10 +2682,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -2759,7 +2781,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9, y: -352}
+  m_AnchoredPosition: {x: 9, y: 471.8402}
   m_SizeDelta: {x: 628.7759, y: 77.574}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1851097107
