@@ -4,20 +4,23 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     public static event Action OnPlayerDeath;
-    public int health;
-    public int maxHealth = 10;
+    public int currentHealth;
+    public int maxHealth = 100;
+    public HealthBar healthBar;
+
     void Start()
     {
-        health = maxHealth;
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     
 
     public void TakeDamage(int amount)
     {
-        health -= amount;  
-
-        if(health <= 0)
+        currentHealth -= amount;
+        healthBar.SetHealth(currentHealth);
+        if(currentHealth <= 0)
         {
             Destroy(gameObject);
             Debug.Log("You're dead");
