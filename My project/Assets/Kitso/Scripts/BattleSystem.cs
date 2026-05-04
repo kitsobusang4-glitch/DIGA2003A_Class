@@ -100,7 +100,35 @@ public class BattleSystem : MonoBehaviour
         // Change state based on what happened
     }
 
-    
+    IEnumerator PlayerKick()
+    {
+        // Damage the enemy
+        bool isDead = enemyUnit.TakeKickDamage(playerUnit.damage);
+
+        enemyHUD.SetHP(enemyUnit.currentHP);
+        dialogueText.text = "The kick attack is successful";
+
+        yield return new WaitForSeconds(2f);
+
+        // Check if the enemy is dead
+        if (isDead)
+        {
+            state = BattleState.WON;
+            EndBattle();
+            OnEnemyDeath?.Invoke();
+
+            //end the battle
+        }
+        else
+        {
+            //enemy turn
+            state = BattleState.ENEMYTURN;
+            StartCoroutine(EnemyTurn());
+        }
+
+        // Change state based on what happened
+    }
+
     IEnumerator EnemyTurn()
     {
         dialogueText.text = "The " + enemyUnit.unitName + " attacks!";
@@ -139,6 +167,14 @@ public class BattleSystem : MonoBehaviour
             return;
 
         StartCoroutine(PlayerAttack());
+    }
+
+    public void OnKickButton()
+    {
+        if (state != BattleState.PLAYERTURN)
+            return;
+
+        StartCoroutine(PlayerKick());
     }
     public void OnHealButton()
     {
