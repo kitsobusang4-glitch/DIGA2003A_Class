@@ -9,6 +9,7 @@ public class Unit : MonoBehaviour
 
     public int maxHP;
     public int currentHP;
+    public int kickDamage;
 
     public bool TakeDamage(int dmg)
     {
@@ -20,6 +21,15 @@ public class Unit : MonoBehaviour
                return false;
     }
 
+    public bool TakeKickDamage(int dmg)
+    {
+        currentHP -= dmg;
+
+        if (currentHP <= 0)
+            return true;
+        else
+            return false;
+    }
     public void Heal(int amount)
     {
         currentHP += amount;
