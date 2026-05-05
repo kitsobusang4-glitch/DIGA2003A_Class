@@ -1,28 +1,31 @@
 fileFormatVersion: 2
-guid: 626e55241e7f30d4594df2d2e7a56aad
+guid: 56043c95b7453454799a6ca955239b48
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -615606032900011748
-    second: MaleWC_spritesheet(right)_0
+      213: 1241298172423881226
+    second: MaleBodyAnimaton_0
   - first:
-      213: -3164129583759086777
-    second: MaleWC_spritesheet(right)_1
+      213: 2419510173327176200
+    second: MaleBodyAnimaton_1
   - first:
-      213: 8208889509851017621
-    second: MaleWC_spritesheet(right)_2
+      213: 6454397018243727375
+    second: MaleBodyAnimaton_2
   - first:
-      213: 7448868260662010621
-    second: MaleWC_spritesheet(right)_3
+      213: -2159382096012433953
+    second: MaleBodyAnimaton_3
   - first:
-      213: -268958711754886454
-    second: MaleWC_spritesheet(right)_4
+      213: 6948245246558939399
+    second: MaleBodyAnimaton_4
   - first:
-      213: 7516134433303551057
-    second: MaleWC_spritesheet(right)_5
+      213: 788129616324494511
+    second: MaleBodyAnimaton_5
   - first:
-      213: 3137237023323403858
-    second: MaleWC_spritesheet(right)_6
+      213: 5129446841309933809
+    second: MaleBodyAnimaton_6
+  - first:
+      213: -3509348443564270681
+    second: MaleBodyAnimaton_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -69,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -92,8 +95,8 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
+    textureFormat: 4
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -118,13 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MaleWC_spritesheet(right)_0
+      name: MaleBodyAnimaton_0
       rect:
         serializedVersion: 2
-        x: 65
-        y: 84
-        width: 247
-        height: 908
+        x: 72
+        y: 315
+        width: 145
+        height: 525
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,20 +136,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c19486f139de477f0800000000000000
-      internalID: -615606032900011748
+      spriteID: a02caa37c1af93110800000000000000
+      internalID: 1241298172423881226
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleWC_spritesheet(right)_1
+      name: MaleBodyAnimaton_1
       rect:
         serializedVersion: 2
-        x: 334
-        y: 76
-        width: 388
-        height: 917
+        x: 226
+        y: 310
+        width: 226
+        height: 530
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 74b2cb868e0c614d0800000000000000
-      internalID: -3164129583759086777
+      spriteID: 8023c9bfea3d39120800000000000000
+      internalID: 2419510173327176200
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleWC_spritesheet(right)_2
+      name: MaleBodyAnimaton_2
       rect:
         serializedVersion: 2
-        x: 735
-        y: 71
-        width: 362
-        height: 926
+        x: 457
+        y: 308
+        width: 211
+        height: 534
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,20 +180,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 591b9134485dbe170800000000000000
-      internalID: 8208889509851017621
+      spriteID: f0002c724ef929950800000000000000
+      internalID: 6454397018243727375
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleWC_spritesheet(right)_3
+      name: MaleBodyAnimaton_3
       rect:
         serializedVersion: 2
-        x: 1119
-        y: 78
-        width: 246
-        height: 908
+        x: 678
+        y: 311
+        width: 144
+        height: 526
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,20 +202,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: df2e07f9732bf5760800000000000000
-      internalID: 7448868260662010621
+      spriteID: fd527d0bc655802e0800000000000000
+      internalID: -2159382096012433953
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleWC_spritesheet(right)_4
+      name: MaleBodyAnimaton_4
       rect:
         serializedVersion: 2
-        x: 1392
-        y: 68
-        width: 386
-        height: 916
+        x: 835
+        y: 305
+        width: 224
+        height: 530
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +224,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ac27a960a77744cf0800000000000000
-      internalID: -268958711754886454
+      spriteID: 70921750d302d6060800000000000000
+      internalID: 6948245246558939399
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleWC_spritesheet(right)_5
+      name: MaleBodyAnimaton_5
       rect:
         serializedVersion: 2
-        x: 1786
-        y: 66
-        width: 356
-        height: 925
+        x: 1061
+        y: 304
+        width: 208
+        height: 535
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,20 +246,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 15cd325e17cae4860800000000000000
-      internalID: 7516134433303551057
+      spriteID: fa48cf9d5bfffea00800000000000000
+      internalID: 788129616324494511
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleWC_spritesheet(right)_6
+      name: MaleBodyAnimaton_6
       rect:
         serializedVersion: 2
-        x: 2176
-        y: 73
-        width: 247
-        height: 908
+        x: 1286
+        y: 309
+        width: 144
+        height: 524
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,8 +268,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 256356f6374b98b20800000000000000
-      internalID: 3137237023323403858
+      spriteID: 1f03786a9b47f2740800000000000000
+      internalID: 5129446841309933809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaleBodyAnimaton_7
+      rect:
+        serializedVersion: 2
+        x: 1612
+        y: 311
+        width: 174
+        height: 527
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ab18441f2a4c4fc0800000000000000
+      internalID: -3509348443564270681
       vertices: []
       indices: 
       edges: []
@@ -285,13 +310,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MaleWC_spritesheet(right)_0: -615606032900011748
-      MaleWC_spritesheet(right)_1: -3164129583759086777
-      MaleWC_spritesheet(right)_2: 8208889509851017621
-      MaleWC_spritesheet(right)_3: 7448868260662010621
-      MaleWC_spritesheet(right)_4: -268958711754886454
-      MaleWC_spritesheet(right)_5: 7516134433303551057
-      MaleWC_spritesheet(right)_6: 3137237023323403858
+      MaleBodyAnimaton_0: 1241298172423881226
+      MaleBodyAnimaton_1: 2419510173327176200
+      MaleBodyAnimaton_2: 6454397018243727375
+      MaleBodyAnimaton_3: -2159382096012433953
+      MaleBodyAnimaton_4: 6948245246558939399
+      MaleBodyAnimaton_5: 788129616324494511
+      MaleBodyAnimaton_6: 5129446841309933809
+      MaleBodyAnimaton_7: -3509348443564270681
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
