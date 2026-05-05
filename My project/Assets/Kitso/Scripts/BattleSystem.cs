@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Xml.Serialization;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem.Processors;
 using UnityEngine.UI;
 
 public enum BattleState { START, PLAYERTURN, ENEMYTURN, WON, LOST }
@@ -60,7 +61,7 @@ public class BattleSystem : MonoBehaviour
 
     IEnumerator PlayerHeal()
     {
-        playerUnit.Heal(40);
+        playerUnit.Heal(35);
 
         playerHUD.SetHP(playerUnit.currentHP);
         dialogueText.text = "A sip of the medicine has healed you up!";
@@ -74,6 +75,7 @@ public class BattleSystem : MonoBehaviour
     
     IEnumerator PlayerAttack()
     {
+        state = BattleState.ENEMYTURN;
         // Damage the enemy
         bool isDead = enemyUnit.TakeDamage(playerUnit.damage);
 
@@ -93,7 +95,7 @@ public class BattleSystem : MonoBehaviour
         } else
         {
             //enemy turn
-            state = BattleState.ENEMYTURN;
+            
             StartCoroutine(EnemyTurn());
         }
 
@@ -102,8 +104,9 @@ public class BattleSystem : MonoBehaviour
 
     IEnumerator PlayerKick()
     {
+        state = BattleState.ENEMYTURN;
         // Damage the enemy
-        bool isDead = enemyUnit.TakeKickDamage(playerUnit.damage);
+        bool isDead = enemyUnit.TakeKickDamage(playerUnit.kickDamage);
 
         enemyHUD.SetHP(enemyUnit.currentHP);
         dialogueText.text = "The kick attack is successful";
@@ -122,24 +125,46 @@ public class BattleSystem : MonoBehaviour
         else
         {
             //enemy turn
-            state = BattleState.ENEMYTURN;
+            
             StartCoroutine(EnemyTurn());
         }
 
         // Change state based on what happened
     }
 
+    public enum EnemyAttacks
+    {
+        Punch,
+        kick,
+    }
     IEnumerator EnemyTurn()
     {
-        dialogueText.text = "The " + enemyUnit.unitName + " attacks!";
+        EnemyAttacks attacks = (EnemyAttacks)UnityEngine.Random.Range(0, System.Enum.GetValues(typeof(EnemyAttacks)).Length);
+        if (attacks == EnemyAttacks.Punch)
+        {
+
+            dialogueText.text = "The " + enemyUnit.unitName + " punches!";
+            playerUnit.currentHP -= enemyUnit.damage;
+            yield return new WaitForSeconds(1f);
+
+            playerHUD.SetHP(playerUnit.currentHP);
+
+            yield return new WaitForSeconds(1f);
+        }
+
+        else if (attacks == EnemyAttacks.kick)
+        {
+            dialogueText.text = "The " + enemyUnit.unitName + " kicks!";
+            playerUnit.currentHP -= enemyUnit.kickDamage;
+            yield return new WaitForSeconds(1f);
+
+            playerHUD.SetHP(playerUnit.currentHP);
+
+        }
         yield return new WaitForSeconds(1f);
-
-       bool isDead = playerUnit.TakeDamage(enemyUnit.damage);
-
-        playerHUD.SetHP(playerUnit.currentHP);
-
-        yield return new WaitForSeconds(1f);
-
+        
+        bool isDead = playerUnit.currentHP <= 0;
+        
         if (isDead)
         {
             state = BattleState.LOST;
