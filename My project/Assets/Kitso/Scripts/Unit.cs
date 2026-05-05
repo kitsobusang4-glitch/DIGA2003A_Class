@@ -21,9 +21,9 @@ public class Unit : MonoBehaviour
                return false;
     }
 
-    public bool TakeKickDamage(int dmg)
+    public bool TakeKickDamage(int kickdmg)
     {
-        currentHP -= dmg;
+        currentHP -= kickdmg;
 
         if (currentHP <= 0)
             return true;

@@ -2515,6 +2515,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1102333732}
   - component: {fileID: 1102333731}
+  - component: {fileID: 1102333733}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2549,6 +2550,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1102333733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102333730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd9adc1a3a5a10e46bd635b49e64b29f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MoneyManager
+  moneyCount: 0
 --- !u!1 &1109939524
 GameObject:
   m_ObjectHideFlags: 0
@@ -3750,7 +3764,7 @@ GameObject:
   - component: {fileID: 1863763694}
   - component: {fileID: 1863763695}
   m_Layer: 0
-  m_Name: Player
+  m_Name: PlayerAnimated
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3883,7 +3897,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 3
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 1982705186380051024, guid: 64d22f4581147ba4a843d11f96f8e02f, type: 3}
+  m_Sprite: {fileID: -3509348443564270681, guid: 56043c95b7453454799a6ca955239b48, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3947,6 +3961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   moveSpeed: 9
+  mm: {fileID: 0}
 --- !u!95 &1863763695
 Animator:
   serializedVersion: 7

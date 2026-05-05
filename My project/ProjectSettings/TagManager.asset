@@ -19,6 +19,7 @@ TagManager:
   - TP13
   - TP14
   - TP15
+  - Money
   layers:
   - Default
   - TransparentFX
