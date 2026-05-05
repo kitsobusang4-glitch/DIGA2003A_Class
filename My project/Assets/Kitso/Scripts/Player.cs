@@ -1,3 +1,4 @@
+using UnityEditor.Rendering;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -49,6 +50,7 @@ public class Player : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Money"))
         {
+           Destroy(other.gameObject);
             mm.moneyCount++;
         }
     }

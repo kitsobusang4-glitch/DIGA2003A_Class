@@ -81,6 +81,7 @@ public class BattleSystem : MonoBehaviour
 
         enemyHUD.SetHP(enemyUnit.currentHP);
         dialogueText.text = "The attack is successful";
+        playerPrefab.GetComponent<Animator>().Play("");
 
         yield return new WaitForSeconds(2f);
 

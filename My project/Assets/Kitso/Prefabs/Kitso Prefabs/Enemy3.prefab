@@ -27,8 +27,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 5.0186, z: 0}
-  m_LocalScale: {x: 0.3377932, y: 0.3126772, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.99999994, y: 0.9256468, z: 2.960391}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 6402511167566764846}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 3
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 2336704357568318381, guid: be1d9d9bc14e0eb4a90b204c314b6674, type: 3}
+  m_Sprite: {fileID: -7582544153502065745, guid: 5cd8b560c9aee114881c5bd9660d216e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -141,3 +141,4 @@ MonoBehaviour:
   damage: 5
   maxHP: 30
   currentHP: 30
+  kickDamage: 0
