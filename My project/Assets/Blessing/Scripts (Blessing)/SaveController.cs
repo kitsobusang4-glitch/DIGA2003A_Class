@@ -6,16 +6,48 @@ using UnityEngine;
 public class SaveController : MonoBehaviour
 {
     private string saveLocation;
+    private InventoryController inventoryController;
+
     // Start is called before the first frame update 
     void Start()
     {
         //Define save location
         saveLocation = Path.Combine(Application.persistentDataPath, "saveData.json");
+        inventoryController = FindObjectOfType<InventoryController>();
+
+        LoadGame();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SaveGame()
     {
-        
+        SaveData saveData = new SaveData
+        {
+            playerPosition = GameObject.FindGameObjectWithTag("Player").transform.position,
+
+            InventorySaveData = inventoryController.GetInventoryItem()
+
+        };
+
+
+        File.WriteAllText(saveLocation, JsonUtility.ToJson(saveData));
+    }
+
+    public void LoadGame()
+    {
+        if (File.Exists(saveLocation))
+        {
+            SaveData saveData = JsonUtility.FromJson<SaveData>(File.ReadAllText(saveLocation));
+
+            GameObject.FindGameObjectWithTag("Player").transform.position = saveData.playerPosition;
+
+
+            inventoryController.SetInventoryItem(saveData.InventorySaveData);
+
+
+        }
+        else
+        {
+            SaveGame();
+        }
     }
 }
