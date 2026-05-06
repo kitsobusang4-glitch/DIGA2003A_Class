@@ -80,8 +80,9 @@ public class BattleSystem : MonoBehaviour
         bool isDead = enemyUnit.TakeDamage(playerUnit.damage);
 
         enemyHUD.SetHP(enemyUnit.currentHP);
+        playerPrefab.GetComponent<Animator>().Play("PunchPunch");
         dialogueText.text = "The attack is successful";
-        playerPrefab.GetComponent<Animator>().Play("");
+        
 
         yield return new WaitForSeconds(2f);
 
@@ -100,7 +101,7 @@ public class BattleSystem : MonoBehaviour
             StartCoroutine(EnemyTurn());
         }
 
-        // Change state based on what happened
+        
     }
 
     IEnumerator PlayerKick()
