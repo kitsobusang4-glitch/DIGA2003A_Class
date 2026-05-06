@@ -168,8 +168,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1519578610656283898, guid: 7edcdbebf237e464e9ab8d09a3fd5705, type: 3}
+      propertyPath: wordspeed
+      value: 0.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1519578610656283898, guid: 7edcdbebf237e464e9ab8d09a3fd5705, type: 3}
       propertyPath: dialogue.Array.size
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1519578610656283898, guid: 7edcdbebf237e464e9ab8d09a3fd5705, type: 3}
       propertyPath: 'dialogue.Array.data[0]'
@@ -181,27 +185,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1519578610656283898, guid: 7edcdbebf237e464e9ab8d09a3fd5705, type: 3}
       propertyPath: 'dialogue.Array.data[2]'
-      value: 'Don''t listen to everyone you see. '
+      value: You got any change man?
       objectReference: {fileID: 0}
     - target: {fileID: 1519578610656283898, guid: 7edcdbebf237e464e9ab8d09a3fd5705, type: 3}
       propertyPath: 'dialogue.Array.data[3]'
-      value: That lady could've lead you to danger!
+      value: ...No?
       objectReference: {fileID: 0}
     - target: {fileID: 1519578610656283898, guid: 7edcdbebf237e464e9ab8d09a3fd5705, type: 3}
       propertyPath: 'dialogue.Array.data[4]'
-      value: Go down my alley to get to the store.
+      value: You dont talk much huh...
       objectReference: {fileID: 0}
     - target: {fileID: 1519578610656283898, guid: 7edcdbebf237e464e9ab8d09a3fd5705, type: 3}
       propertyPath: 'dialogue.Array.data[5]'
-      value: You'll see a school kid at the bus stop...
+      value: Well, if you're gonna walk here, stay near the buses
       objectReference: {fileID: 0}
     - target: {fileID: 1519578610656283898, guid: 7edcdbebf237e464e9ab8d09a3fd5705, type: 3}
       propertyPath: 'dialogue.Array.data[6]'
-      value: Ask him where to go from there
+      value: Street's less dangerous there
       objectReference: {fileID: 0}
     - target: {fileID: 1519578610656283898, guid: 7edcdbebf237e464e9ab8d09a3fd5705, type: 3}
       propertyPath: 'dialogue.Array.data[7]'
-      value: He will tell you the truth
+      value: It's right past my alley, and I'll let you pass for free!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1519578610656283898, guid: 7edcdbebf237e464e9ab8d09a3fd5705, type: 3}
+      propertyPath: 'dialogue.Array.data[8]'
+      value: this time...
       objectReference: {fileID: 0}
     - target: {fileID: 1519578610656283898, guid: 7edcdbebf237e464e9ab8d09a3fd5705, type: 3}
       propertyPath: grannyDialogue.Array.size
@@ -3690,7 +3698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.6745098}
+  m_Color: {r: 0.6901961, g: 0.03459108, b: 0.03459108, a: 0.92156863}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3764,7 +3772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: 028f7d45e1ebceb498c600a5ee822fc0, type: 2}
   m_Color: {r: 0.018606914, g: 0.99371064, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -4018,6 +4026,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6202850034561381963, guid: 32648ae1ca982d64dad22dfe86112d07, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4246,7 +4258,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &960911151
 RectTransform:
@@ -4541,6 +4553,135 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1081583212
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1081583214}
+  - component: {fileID: 1081583213}
+  m_Layer: 0
+  m_Name: Audio Source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1081583213
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081583212}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 83ac4ab7d4c8eea46b1949b0be8ab364, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1081583214
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081583212}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -12.76405, y: 79.0727, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1143555798 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5706409662498848931, guid: 32648ae1ca982d64dad22dfe86112d07, type: 3}
@@ -4557,6 +4698,10 @@ PrefabInstance:
     - target: {fileID: 3402838082226270583, guid: 6122302e5940c73429ea21ce8304c591, type: 3}
       propertyPath: m_Name
       value: Dialogue Panel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3402838082226270583, guid: 6122302e5940c73429ea21ce8304c591, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5806984730107585406, guid: 6122302e5940c73429ea21ce8304c591, type: 3}
       propertyPath: m_Pivot.x
@@ -5780,6 +5925,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6202850034561381963, guid: 32648ae1ca982d64dad22dfe86112d07, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5837,6 +5986,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6202850034561381963, guid: 32648ae1ca982d64dad22dfe86112d07, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5876,7 +6029,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10, y: -353.1598}
+  m_AnchoredPosition: {x: 3, y: -353.1598}
   m_SizeDelta: {x: 555.1313, y: 32.2092}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1486659496
@@ -5899,7 +6052,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Get directions from NPC's
+  m_text: Press E to yell for help from NPC's
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5932,7 +6085,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -5965,7 +6118,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -13.685181, y: 0, z: -0.00012207031, w: 0}
+  m_margin: {x: -13.685181, y: 0, z: -22.363647, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -6705,6 +6858,10 @@ PrefabInstance:
     - target: {fileID: 5706409662498848931, guid: 32648ae1ca982d64dad22dfe86112d07, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6202850034561381963, guid: 32648ae1ca982d64dad22dfe86112d07, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7630,6 +7787,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8447761036149189126, guid: 87b19feac9da9b848a1d4045a16e1466, type: 3}
+      propertyPath: wordspeed
+      value: 0.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 8447761036149189126, guid: 87b19feac9da9b848a1d4045a16e1466, type: 3}
       propertyPath: dialogue.Array.size
       value: 5
       objectReference: {fileID: 0}
@@ -7639,19 +7800,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8447761036149189126, guid: 87b19feac9da9b848a1d4045a16e1466, type: 3}
       propertyPath: 'dialogue.Array.data[1]'
-      value: Are you looking for the shop?
+      value: Well, you look cute...
       objectReference: {fileID: 0}
     - target: {fileID: 8447761036149189126, guid: 87b19feac9da9b848a1d4045a16e1466, type: 3}
       propertyPath: 'dialogue.Array.data[2]'
-      value: EASY
+      value: And you look lost.
       objectReference: {fileID: 0}
     - target: {fileID: 8447761036149189126, guid: 87b19feac9da9b848a1d4045a16e1466, type: 3}
       propertyPath: 'dialogue.Array.data[3]'
-      value: 'Just keep going straight past my club '
+      value: Walk past my club and I'll let you in through the back
       objectReference: {fileID: 0}
     - target: {fileID: 8447761036149189126, guid: 87b19feac9da9b848a1d4045a16e1466, type: 3}
       propertyPath: 'dialogue.Array.data[4]'
-      value: You can't miss it.
+      value: It's safe here than outside.
       objectReference: {fileID: 0}
     - target: {fileID: 8447761036149189126, guid: 87b19feac9da9b848a1d4045a16e1466, type: 3}
       propertyPath: grannyDialogue.Array.size
@@ -7718,6 +7879,10 @@ PrefabInstance:
     - target: {fileID: 5706409662498848931, guid: 32648ae1ca982d64dad22dfe86112d07, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6202850034561381963, guid: 32648ae1ca982d64dad22dfe86112d07, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7917,6 +8082,10 @@ PrefabInstance:
     - target: {fileID: 5706409662498848931, guid: 32648ae1ca982d64dad22dfe86112d07, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6202850034561381963, guid: 32648ae1ca982d64dad22dfe86112d07, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8182,6 +8351,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1163056543093454725, guid: 4f9480dc21a643a40ab7a46f8b7f36aa, type: 3}
+      propertyPath: 'dialogue.Array.data[0]'
+      value: Well... aren't you cute...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1163056543093454725, guid: 4f9480dc21a643a40ab7a46f8b7f36aa, type: 3}
+      propertyPath: 'dialogue.Array.data[1]'
+      value: You look lost
+      objectReference: {fileID: 0}
+    - target: {fileID: 1163056543093454725, guid: 4f9480dc21a643a40ab7a46f8b7f36aa, type: 3}
+      propertyPath: 'dialogue.Array.data[2]'
+      value: You should continue going straight
+      objectReference: {fileID: 0}
+    - target: {fileID: 1163056543093454725, guid: 4f9480dc21a643a40ab7a46f8b7f36aa, type: 3}
+      propertyPath: 'dialogue.Array.data[3]'
+      value: It's a shortcut, trust me
+      objectReference: {fileID: 0}
     - target: {fileID: 2344934247086870925, guid: 4f9480dc21a643a40ab7a46f8b7f36aa, type: 3}
       propertyPath: m_Size.x
       value: 33.299034
@@ -8252,7 +8437,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9045615479476870243, guid: 4f9480dc21a643a40ab7a46f8b7f36aa, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8311,6 +8496,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6202850034561381963, guid: 32648ae1ca982d64dad22dfe86112d07, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8342,3 +8531,4 @@ SceneRoots:
   - {fileID: 155233883}
   - {fileID: 1259484954}
   - {fileID: 1288510469}
+  - {fileID: 1081583214}

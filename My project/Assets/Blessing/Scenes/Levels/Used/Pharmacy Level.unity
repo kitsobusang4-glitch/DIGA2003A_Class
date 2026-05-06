@@ -686,15 +686,14 @@ MonoBehaviour:
   dialoguePanel: {fileID: 1352289114}
   dialogueText: {fileID: 349395734}
   dialogue:
-  - Congradulations on finding my store!
-  - And you're lucky, I have 2 bottles of medicine left.
-  - To be honest, I'm surprised you found your way here.
-  - With how dangerous this town is, I thought you were a goner.
-  - Well, enough of my chattering.
-  - Take the left exit... and beware out there.
-  - These thugs have no mercy.
+  - ...You've come a long way for this.
+  - Most people turn back before they find my store
+  - Here is your medication.
+  - But be careful out there...
+  - I know the thug outside hates newcomers
+  - And since I've never seen you, I'm guessing you are one
   contButton: {fileID: 341082174}
-  wordspeed: 0.06
+  wordspeed: 0.006
   playerIsClose: 0
 --- !u!61 &156061743
 BoxCollider2D:

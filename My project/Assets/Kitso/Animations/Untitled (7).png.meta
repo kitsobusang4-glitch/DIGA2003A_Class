@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: c6c46ecb77c137444993e9d49e5ba62b
+guid: a56279b9ffb35e44c962bbe0300500f8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1075646910152004887
-    second: MaleKick_spritesheet 1_0
+      213: -7854140664152144422
+    second: Untitled (7)_0
   - first:
-      213: 3881522092549675318
-    second: MaleKick_spritesheet 1_1
+      213: 3603678082335020891
+    second: Untitled (7)_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -54,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -78,7 +78,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -103,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MaleKick_spritesheet 1_0
+      name: Untitled (7)_0
       rect:
         serializedVersion: 2
-        x: 119
-        y: 66
-        width: 601
-        height: 941
+        x: 593
+        y: 284
+        width: 326
+        height: 508
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9eaa4a095d88211f0800000000000000
-      internalID: -1075646910152004887
+      spriteID: ad5c241ddac700390800000000000000
+      internalID: -7854140664152144422
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleKick_spritesheet 1_1
+      name: Untitled (7)_1
       rect:
         serializedVersion: 2
-        x: 735
-        y: 68
-        width: 796
-        height: 976
+        x: 924
+        y: 286
+        width: 430
+        height: 525
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 639114a27cfedd530800000000000000
-      internalID: 3881522092549675318
+      spriteID: b57907e6f16d20230800000000000000
+      internalID: 3603678082335020891
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MaleKick_spritesheet 1_0: -1075646910152004887
-      MaleKick_spritesheet 1_1: 3881522092549675318
+      Untitled (7)_0: -7854140664152144422
+      Untitled (7)_1: 3603678082335020891
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

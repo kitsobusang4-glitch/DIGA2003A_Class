@@ -28,6 +28,8 @@ public class BattleSystem : MonoBehaviour
 
     public BattleState state;
 
+    public Animator enemyAnimator;
+
     void Start()
     {
         state = BattleState.START;
@@ -61,7 +63,7 @@ public class BattleSystem : MonoBehaviour
 
     IEnumerator PlayerHeal()
     {
-        playerUnit.Heal(35);
+        playerUnit.Heal(50);
 
         playerHUD.SetHP(playerUnit.currentHP);
         dialogueText.text = "A sip of the medicine has healed you up!";
@@ -111,6 +113,7 @@ public class BattleSystem : MonoBehaviour
         bool isDead = enemyUnit.TakeKickDamage(playerUnit.kickDamage);
 
         enemyHUD.SetHP(enemyUnit.currentHP);
+        playerPrefab.GetComponent<Animator>().Play("PlayerKick");
         dialogueText.text = "The kick attack is successful";
 
         yield return new WaitForSeconds(2f);
@@ -144,7 +147,11 @@ public class BattleSystem : MonoBehaviour
         EnemyAttacks attacks = (EnemyAttacks)UnityEngine.Random.Range(0, System.Enum.GetValues(typeof(EnemyAttacks)).Length);
         if (attacks == EnemyAttacks.Punch)
         {
+            enemyAnimator.SetTrigger("EnemyPunch");
 
+            yield return new WaitForSeconds(1f);
+
+            enemyAnimator.SetTrigger("EnemyIdle");
             dialogueText.text = "The " + enemyUnit.unitName + " punches!";
             playerUnit.currentHP -= enemyUnit.damage;
             yield return new WaitForSeconds(1f);
@@ -156,6 +163,12 @@ public class BattleSystem : MonoBehaviour
 
         else if (attacks == EnemyAttacks.kick)
         {
+            enemyAnimator.SetTrigger("EnemyKick");
+
+            yield return new WaitForSeconds(1f);
+
+            enemyAnimator.SetTrigger("EnemyIdle");
+
             dialogueText.text = "The " + enemyUnit.unitName + " kicks!";
             playerUnit.currentHP -= enemyUnit.kickDamage;
             yield return new WaitForSeconds(1f);
@@ -209,6 +222,11 @@ public class BattleSystem : MonoBehaviour
             return;
 
         StartCoroutine(PlayerHeal());
+    }
+
+    IEnumerator Delayer()
+    {
+        yield return new WaitForSeconds(4f);
     }
 }
 
