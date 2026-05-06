@@ -2932,8 +2932,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2028832003}
-        m_TargetAssemblyTypeName: UISTUFF, Assembly-CSharp
+      - m_Target: {fileID: 144892367}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: RestartLevel
         m_Mode: 1
         m_Arguments:
