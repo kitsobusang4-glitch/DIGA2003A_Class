@@ -14,12 +14,17 @@ public class PLAYER : MonoBehaviour
     public GameObject dialoguePanel;
     public TMPro.TextMeshProUGUI dialogueText;
     public string[] dialogue;
-    private int index;
+    public int index;
 
     public GameObject contButton;
     public float wordspeed;
-    public bool playerIsClose; 
+    public bool playerIsClose;
+    public GameObject Dia_Btn;
 
+    public void Start()
+    {
+        Dia_Btn.SetActive(false);    
+    }
 
     void Update()
     {
@@ -42,6 +47,12 @@ public class PLAYER : MonoBehaviour
         if (dialogueText != null && index < dialogue.Length && dialogueText.text == dialogue[index])
         {
             contButton.SetActive(true);
+        }
+
+        if(index >= 4)
+        {
+            Dia_Btn.SetActive(true) ;
+            zeroText();
         }
     }
 

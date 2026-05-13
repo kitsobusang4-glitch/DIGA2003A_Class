@@ -1085,9 +1085,11 @@ MonoBehaviour:
     the medicine.
 
     And make it back home safely.'
+  index: 0
   contButton: {fileID: 950042}
   wordspeed: 0.06
   playerIsClose: 0
+  Dia_Btn: {fileID: 384389568}
 --- !u!1 &870814708
 GameObject:
   m_ObjectHideFlags: 0
@@ -1979,9 +1981,11 @@ MonoBehaviour:
     the medicine.
 
     Make it back home safely.'
+  index: 0
   contButton: {fileID: 950042}
   wordspeed: 0.006
   playerIsClose: 0
+  Dia_Btn: {fileID: 0}
 --- !u!223 &2076848746
 Canvas:
   m_ObjectHideFlags: 0

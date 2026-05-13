@@ -4075,9 +4075,11 @@ MonoBehaviour:
   - '"Good! Now press CONTINUE."'
   - '"Great you''re ready!"'
   - '"Go to the right of the screen and good luck!"'
+  index: 0
   contButton: {fileID: 658452096}
   wordspeed: 0.01
   playerIsClose: 0
+  Dia_Btn: {fileID: 0}
 --- !u!114 &1863763694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4825,7 +4827,6 @@ SceneRoots:
   - {fileID: 1372642624}
   - {fileID: 1863763691}
   - {fileID: 618785644}
-  - {fileID: 539579881}
   - {fileID: 1064689682}
   - {fileID: 1356333842}
   - {fileID: 1679260014}
@@ -4836,3 +4837,4 @@ SceneRoots:
   - {fileID: 117846333}
   - {fileID: 1001043101}
   - {fileID: 851954758}
+  - {fileID: 539579881}
