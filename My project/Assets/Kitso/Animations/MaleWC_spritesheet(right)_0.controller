@@ -92,7 +92,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: ForwardForward
+    m_ConditionEvent: ForwardWalk
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 9155124696597627612}
@@ -151,7 +151,7 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 1
     m_Controller: {fileID: 9100000}
-  - m_Name: ForwardForward
+  - m_Name: ForwardWalk
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -205,7 +205,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: ForwardForward
+    m_ConditionEvent: ForwardWalk
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -989176228930877563}
@@ -267,7 +267,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 50e56bdf399742e4e9f1077f93f89a1c, type: 2}
+  m_Motion: {fileID: 7400000, guid: 6479f2e2422257540a3271ff2ac8285b, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

@@ -48,7 +48,7 @@ public class Player : MonoBehaviour
         transform.position += moveDirection.normalized * moveSpeed * Time.deltaTime;
         
         animator.SetBool("RunRun", isWalking);
-        animator.SetBool("FowardForward", isRunning);
+        animator.SetBool("ForwardWalk", isRunning);
     }
     void OnTriggerEnter2D(Collider2D other)
     {
