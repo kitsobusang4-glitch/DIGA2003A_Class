@@ -5,15 +5,16 @@ using UnityEngine.UI;
 public class MoneyManager : MonoBehaviour
 {
     public int moneyCount;
-    public TextMeshProUGUI moneyText;
+    public TMP_Text moneyText;
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-        moneyText.text = "Cash found: " + moneyCount.ToString();
+        moneyText.text = " found: R" + moneyCount.ToString() + "00";
+        
     }
 }
