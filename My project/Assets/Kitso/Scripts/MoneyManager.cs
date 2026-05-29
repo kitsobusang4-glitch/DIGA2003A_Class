@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class MoneyManager : MonoBehaviour
 {
     public int moneyCount;
-    public TextMeshProUGUI moneyText;
+    public TMP_Text moneyText;
     void Start()
     {
        
@@ -15,6 +15,6 @@ public class MoneyManager : MonoBehaviour
     void Update()
     {
         moneyText.text = " found: R" + moneyCount.ToString() + "00";
-        DontDestroyOnLoad(moneyText);
+        
     }
 }
