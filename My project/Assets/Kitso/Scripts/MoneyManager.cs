@@ -15,7 +15,7 @@ public class MoneyManager : MonoBehaviour
     void Update()
     {
         
-        moneyText.text = " found: R" + moneyCount.ToString();
+        moneyText.text = " found: R" + moneyCount.ToString() + "00";
         
     }
 }

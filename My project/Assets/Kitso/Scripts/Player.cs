@@ -50,6 +50,7 @@ public class Player : MonoBehaviour
         animator.SetBool("RunRun", isWalking);
         animator.SetBool("ForwardWalk", isRunning);
     }
+    
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.CompareTag("Money"))
