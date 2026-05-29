@@ -8,12 +8,14 @@ public class MoneyManager : MonoBehaviour
     public TextMeshProUGUI moneyText;
     void Start()
     {
-        
+        DontDestroyOnLoad(moneyText);
     }
 
     // Update is called once per frame
     void Update()
     {
-        moneyText.text = " found: " + moneyCount.ToString();
+        
+        moneyText.text = " found: R" + moneyCount.ToString();
+        
     }
 }
