@@ -1,16 +1,10 @@
+using System.Collections;
+using System.Collections.Generic; 
 using UnityEngine;
 
-public class SaveData : MonoBehaviour
+[System.Serializable]
+public class SaveData
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public Vector3 playerPosition;
+    public string mapBoundary; //The boundary name for the map
 }
