@@ -2929,9 +2929,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 886043778}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dddfce8ff974ce6469f919572b2e4b43, type: 3}
+  m_Script: {fileID: 11500000, guid: 9641183286c6c6e4b8dbee8c7f8c943a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  inventoryPanel: {fileID: 1211074676}
+  slotPrefab: {fileID: 2035626573404796607, guid: cc164b931de31854493c33bc1b0a1577, type: 3}
+  slotCount: 23
+  itemPrefabs:
+  - {fileID: 756571038018858976, guid: 233b91d8b82e43743966bf5f5b8b834e, type: 3}
 --- !u!1 &893181889
 GameObject:
   m_ObjectHideFlags: 0
@@ -4574,6 +4579,7 @@ GameObject:
   - component: {fileID: 1211074677}
   - component: {fileID: 1211074679}
   - component: {fileID: 1211074678}
+  - component: {fileID: 1211074680}
   m_Layer: 5
   m_Name: InventoryPage
   m_TagString: Untagged
@@ -4597,7 +4603,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.794, y: -62.7314}
+  m_AnchoredPosition: {x: -0, y: -68}
   m_SizeDelta: {x: 1696.0745, y: 736.8417}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1211074678
@@ -4638,6 +4644,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1211074676}
   m_CullTransparentMesh: 1
+--- !u!114 &1211074680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211074676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.GridLayoutGroup
+  m_Padding:
+    m_Left: 100
+    m_Right: 100
+    m_Top: 100
+    m_Bottom: 100
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 100, y: 100}
+  m_Spacing: {x: 90, y: 100}
+  m_Constraint: 0
+  m_ConstraintCount: 2
 --- !u!1 &1329680479
 GameObject:
   m_ObjectHideFlags: 0
@@ -4993,7 +5023,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 28.66388, y: 163}
+  m_AnchoredPosition: {x: 28.663818, y: 163}
   m_SizeDelta: {x: -1201.6501, y: -912.92}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1352289116
