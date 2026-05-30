@@ -33,7 +33,7 @@ public class SaveController : MonoBehaviour
         }
         else
         {
-            SaveGame()
+            SaveGame();
         }
     }
 }
