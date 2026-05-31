@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: bf9a3cd2f9681dc40bcd0b17022a1267
+guid: 89fed37afcea4814993320e69392729b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9222495590898387357
-    second: MalePunch_spritesheet_edit2_0
+      213: 6415511074171620726
+    second: Chemist_idle_spritesheet_0
   - first:
-      213: 7452568611769547282
-    second: MalePunch_spritesheet_edit2_1
+      213: -7039799946252056677
+    second: Chemist_idle_spritesheet_1
   - first:
-      213: -8190417407347781434
-    second: MalePunch_spritesheet_edit2_2
+      213: 265360718351142067
+    second: Chemist_idle_spritesheet_2
+  - first:
+      213: -2603317700997466619
+    second: Chemist_idle_spritesheet_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -43,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -57,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -81,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -106,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MalePunch_spritesheet_edit2_0
+      name: Chemist_idle_spritesheet_0
       rect:
         serializedVersion: 2
-        x: 53
-        y: 82
-        width: 601
-        height: 941
+        x: 63
+        y: 57
+        width: 979
+        height: 3101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 36635e97f1d130080800000000000000
-      internalID: -9222495590898387357
+      spriteID: 67d8594c459780950800000000000000
+      internalID: 6415511074171620726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MalePunch_spritesheet_edit2_1
+      name: Chemist_idle_spritesheet_1
       rect:
         serializedVersion: 2
-        x: 721
-        y: 76
-        width: 718
-        height: 928
+        x: 1115
+        y: 59
+        width: 979
+        height: 3101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 21affb0caa7dc6760800000000000000
-      internalID: 7452568611769547282
+      spriteID: b9705d15f3b9d4e90800000000000000
+      internalID: -7039799946252056677
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MalePunch_spritesheet_edit2_2
+      name: Chemist_idle_spritesheet_2
       rect:
         serializedVersion: 2
-        x: 1494
-        y: 84
-        width: 686
-        height: 900
+        x: 2204
+        y: 40
+        width: 1059
+        height: 3073
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,8 +168,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6c01cd043cac55e80800000000000000
-      internalID: -8190417407347781434
+      spriteID: 3bc89aada20cea300800000000000000
+      internalID: 265360718351142067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chemist_idle_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 3372
+        y: 40
+        width: 1059
+        height: 3073
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5063f8a08582fdbd0800000000000000
+      internalID: -2603317700997466619
       vertices: []
       indices: 
       edges: []
@@ -185,9 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MalePunch_spritesheet_edit2_0: -9222495590898387357
-      MalePunch_spritesheet_edit2_1: 7452568611769547282
-      MalePunch_spritesheet_edit2_2: -8190417407347781434
+      Chemist_idle_spritesheet_0: 6415511074171620726
+      Chemist_idle_spritesheet_1: -7039799946252056677
+      Chemist_idle_spritesheet_2: 265360718351142067
+      Chemist_idle_spritesheet_3: -2603317700997466619
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

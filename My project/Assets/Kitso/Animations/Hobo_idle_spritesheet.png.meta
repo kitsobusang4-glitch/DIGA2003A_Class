@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: bf9a3cd2f9681dc40bcd0b17022a1267
+guid: a69adcabbc6459d49ad4636d2f250cb1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9222495590898387357
-    second: MalePunch_spritesheet_edit2_0
+      213: 7656867886338174254
+    second: Hobo_idle_spritesheet_0
   - first:
-      213: 7452568611769547282
-    second: MalePunch_spritesheet_edit2_1
+      213: -5202375565788990835
+    second: Hobo_idle_spritesheet_1
   - first:
-      213: -8190417407347781434
-    second: MalePunch_spritesheet_edit2_2
+      213: 2896656580844579989
+    second: Hobo_idle_spritesheet_2
+  - first:
+      213: 9001880935396848473
+    second: Hobo_idle_spritesheet_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -43,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -57,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -81,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -106,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MalePunch_spritesheet_edit2_0
+      name: Hobo_idle_spritesheet_0
       rect:
         serializedVersion: 2
-        x: 53
-        y: 82
-        width: 601
-        height: 941
+        x: 61
+        y: 16
+        width: 1125
+        height: 1853
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 36635e97f1d130080800000000000000
-      internalID: -9222495590898387357
+      spriteID: e2d684956c8a24a60800000000000000
+      internalID: 7656867886338174254
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MalePunch_spritesheet_edit2_1
+      name: Hobo_idle_spritesheet_1
       rect:
         serializedVersion: 2
-        x: 721
-        y: 76
-        width: 718
-        height: 928
+        x: 1221
+        y: 47
+        width: 1084
+        height: 1889
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 21affb0caa7dc6760800000000000000
-      internalID: 7452568611769547282
+      spriteID: d82b9fc7cf27dc7b0800000000000000
+      internalID: -5202375565788990835
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MalePunch_spritesheet_edit2_2
+      name: Hobo_idle_spritesheet_2
       rect:
         serializedVersion: 2
-        x: 1494
-        y: 84
-        width: 686
-        height: 900
+        x: 2326
+        y: 62
+        width: 1042
+        height: 1909
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,8 +168,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6c01cd043cac55e80800000000000000
-      internalID: -8190417407347781434
+      spriteID: 59ce98920ddf23820800000000000000
+      internalID: 2896656580844579989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hobo_idle_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 3380
+        y: 67
+        width: 1086
+        height: 1886
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 953b0b8440b1dec70800000000000000
+      internalID: 9001880935396848473
       vertices: []
       indices: 
       edges: []
@@ -185,9 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MalePunch_spritesheet_edit2_0: -9222495590898387357
-      MalePunch_spritesheet_edit2_1: 7452568611769547282
-      MalePunch_spritesheet_edit2_2: -8190417407347781434
+      Hobo_idle_spritesheet_0: 7656867886338174254
+      Hobo_idle_spritesheet_1: -5202375565788990835
+      Hobo_idle_spritesheet_2: 2896656580844579989
+      Hobo_idle_spritesheet_3: 9001880935396848473
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
