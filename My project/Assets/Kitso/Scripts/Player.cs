@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
     private Animator animator;
     bool isWalking = false;
     bool isRunning = false;
+    bool isBackwalk = false;
     public MoneyManager mm;
     
     void Start()
@@ -19,12 +20,13 @@ public class Player : MonoBehaviour
         Vector3 moveDirection = Vector3.zero;
         isWalking = false;
         isRunning = false;
+        isBackwalk = false;
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
 
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             moveDirection.y += 1;
-            isRunning = true;
+            isBackwalk = true;
         }
         if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
@@ -49,6 +51,7 @@ public class Player : MonoBehaviour
         
         animator.SetBool("RunRun", isWalking);
         animator.SetBool("ForwardWalk", isRunning);
+        animator.SetBool("BackwardWalk", isBackwalk);
     }
     
     void OnTriggerEnter2D(Collider2D other)

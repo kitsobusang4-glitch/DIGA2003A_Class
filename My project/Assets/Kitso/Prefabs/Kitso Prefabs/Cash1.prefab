@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 5706409662498848931}
   - component: {fileID: 6202850034561381963}
   - component: {fileID: 5733576956321926228}
+  - component: {fileID: 7340407988595687142}
+  - component: {fileID: 8664379020806613894}
   m_Layer: 0
   m_Name: Cash1
   m_TagString: Money
@@ -82,7 +84,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7346423642426575543, guid: b441d4dbbb8cc8b4499815b64ab389c5, type: 3}
+  m_Sprite: {fileID: 3167925363876512656, guid: 6ede092718b2e5a44a4bc1c67832e142, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -130,7 +132,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 8.87, y: 5.36}
+    oldSize: {x: 6.9600005, y: 7.006836}
     newSize: {x: 3.72, y: 2.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -138,3 +140,41 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 11.625, y: 8.25}
   m_EdgeRadius: 0
+--- !u!111 &7340407988595687142
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386309683786326127}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 7400000, guid: e5e613efce24cb943be808570d245ff7, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
+--- !u!95 &8664379020806613894
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386309683786326127}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
