@@ -9140,8 +9140,9 @@ GameObject:
   - component: {fileID: 1152010437}
   - component: {fileID: 1152010439}
   - component: {fileID: 1152010438}
+  - component: {fileID: 1152010440}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Cash Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9266,6 +9267,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1152010436}
   m_CullTransparentMesh: 1
+--- !u!114 &1152010440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152010436}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd9adc1a3a5a10e46bd635b49e64b29f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MoneyManager
+  moneyCount: 0
+  moneyText: {fileID: 1152010438}
 --- !u!1 &1154947676
 GameObject:
   m_ObjectHideFlags: 0
@@ -11381,6 +11396,7 @@ GameObject:
   - component: {fileID: 1461957450}
   - component: {fileID: 1461957449}
   - component: {fileID: 1461957451}
+  - component: {fileID: 1461957452}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -11429,6 +11445,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoneyManager
   moneyCount: 0
   moneyText: {fileID: 1152010438}
+--- !u!114 &1461957452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461957448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7a2de3e5d82c0c43b4e5cba23209e96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MoneyStuff
+  moneyCount: 0
 --- !u!1 &1485552889
 GameObject:
   m_ObjectHideFlags: 0

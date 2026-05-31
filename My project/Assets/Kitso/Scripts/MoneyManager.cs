@@ -6,7 +6,7 @@ public class MoneyManager : MonoBehaviour
 {
     public int moneyCount;
     public TMP_Text moneyText;
-    void Start()
+   private void Start()
     {
        
     }
@@ -14,6 +14,7 @@ public class MoneyManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         moneyText.text = " found: R" + moneyCount.ToString() + "00";
         
     }
