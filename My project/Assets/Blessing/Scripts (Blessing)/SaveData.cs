@@ -6,6 +6,6 @@ using UnityEngine;
 public class SaveData
 {
     public Vector3 playerPosition;
-    public string mapBoundary; //The boundary name for the map
+    public string mapBoundary; //The boundary name for the map 
     public List<InventorySaveData> inventorySaveData;
 }

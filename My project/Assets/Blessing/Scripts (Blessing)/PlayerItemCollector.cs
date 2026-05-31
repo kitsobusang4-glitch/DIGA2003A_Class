@@ -1,31 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Progress;
-
 public class PlayerItemCollector : MonoBehaviour
 {
     private InventoryController inventoryController;
-
     // Start is called before the first frame update 
-    [System.Obsolete]
     void Start()
     {
-        inventoryController = FindObjectOfType<InventoryController>();
+        inventoryController = Object.FindAnyObjectByType<InventoryController>();
     }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Item"))
         {
-            Item item = collision.GetComponent<Item>();
-            if(item != null)
+            Debug.Log("PLAYER ITEM COLLECTOR TRIGGERED");
+            //rest of code...
+        }
+        if (collision.CompareTag("Item"))
+            if (true)
+        {
+            item item = collision.GetComponent<item>();
+            if (item != null)
             {
                 //Add item inventory 
                 bool itemAdded = inventoryController.AddItem(collision.gameObject);
-
+                Debug.Log("AddItem return: " + itemAdded);
                 if (itemAdded)
                 {
+                    Debug.Log("Destroying item");
                     Destroy(collision.gameObject);
                 }
             }
