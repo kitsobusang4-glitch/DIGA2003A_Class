@@ -20,6 +20,7 @@ TagManager:
   - TP14
   - TP15
   - Money
+  - 'Item '
   layers:
   - Default
   - TransparentFX
@@ -62,6 +63,12 @@ TagManager:
     locked: 0
   - name: New Layer 2
     uniqueID: 2556928055
+    locked: 0
+  - name: 'Player '
+    uniqueID: 2097526277
+    locked: 0
+  - name: Item
+    uniqueID: 811450015
     locked: 0
   m_RenderingLayers:
   - Default
