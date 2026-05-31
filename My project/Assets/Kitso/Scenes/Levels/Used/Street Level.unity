@@ -172,6 +172,10 @@ PrefabInstance:
       value: 0.006
       objectReference: {fileID: 0}
     - target: {fileID: 1519578610656283898, guid: 7edcdbebf237e464e9ab8d09a3fd5705, type: 3}
+      propertyPath: playerIsClose
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1519578610656283898, guid: 7edcdbebf237e464e9ab8d09a3fd5705, type: 3}
       propertyPath: dialogue.Array.size
       value: 9
       objectReference: {fileID: 0}
@@ -215,9 +219,29 @@ PrefabInstance:
       propertyPath: grannyDialogue.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2271893835477661886, guid: 7edcdbebf237e464e9ab8d09a3fd5705, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2271893835477661886, guid: 7edcdbebf237e464e9ab8d09a3fd5705, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -224.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2271893835477661886, guid: 7edcdbebf237e464e9ab8d09a3fd5705, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 145.7
+      objectReference: {fileID: 0}
     - target: {fileID: 2550070623369626060, guid: 7edcdbebf237e464e9ab8d09a3fd5705, type: 3}
       propertyPath: m_Name
       value: Canvas hobo
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550070623369626060, guid: 7edcdbebf237e464e9ab8d09a3fd5705, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 6831727464162809628, guid: 7edcdbebf237e464e9ab8d09a3fd5705, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7735851116484391983, guid: 7edcdbebf237e464e9ab8d09a3fd5705, type: 3}
       propertyPath: m_text
@@ -7977,13 +8001,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas club lady
       objectReference: {fileID: 0}
+    - target: {fileID: 886381117649436862, guid: 87b19feac9da9b848a1d4045a16e1466, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 1085437195414354416, guid: 87b19feac9da9b848a1d4045a16e1466, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3248981670377891165, guid: 87b19feac9da9b848a1d4045a16e1466, type: 3}
       propertyPath: m_text
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5534519335728192838, guid: 87b19feac9da9b848a1d4045a16e1466, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 228
+      objectReference: {fileID: 0}
+    - target: {fileID: 5534519335728192838, guid: 87b19feac9da9b848a1d4045a16e1466, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 623
+      objectReference: {fileID: 0}
     - target: {fileID: 8447761036149189126, guid: 87b19feac9da9b848a1d4045a16e1466, type: 3}
       propertyPath: wordspeed
       value: 0.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 8447761036149189126, guid: 87b19feac9da9b848a1d4045a16e1466, type: 3}
+      propertyPath: playerIsClose
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8447761036149189126, guid: 87b19feac9da9b848a1d4045a16e1466, type: 3}
       propertyPath: dialogue.Array.size

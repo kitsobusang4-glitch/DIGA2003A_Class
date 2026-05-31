@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: bf9a3cd2f9681dc40bcd0b17022a1267
+guid: 2b27d7d2f583b134eab45b7856ef20d5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9222495590898387357
-    second: MalePunch_spritesheet_edit2_0
+      213: 4530698040277511799
+    second: ClubLady_idle_spritesheet_0
   - first:
-      213: 7452568611769547282
-    second: MalePunch_spritesheet_edit2_1
+      213: 3638259340368509257
+    second: ClubLady_idle_spritesheet_1
   - first:
-      213: -8190417407347781434
-    second: MalePunch_spritesheet_edit2_2
+      213: 5599979529122891544
+    second: ClubLady_idle_spritesheet_2
+  - first:
+      213: 6952252234602927167
+    second: ClubLady_idle_spritesheet_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -106,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MalePunch_spritesheet_edit2_0
+      name: ClubLady_idle_spritesheet_0
       rect:
         serializedVersion: 2
-        x: 53
-        y: 82
-        width: 601
-        height: 941
+        x: 67
+        y: 129
+        width: 1345
+        height: 2564
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 36635e97f1d130080800000000000000
-      internalID: -9222495590898387357
+      spriteID: 77eac4becd540ee30800000000000000
+      internalID: 4530698040277511799
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MalePunch_spritesheet_edit2_1
+      name: ClubLady_idle_spritesheet_1
       rect:
         serializedVersion: 2
-        x: 721
-        y: 76
-        width: 718
-        height: 928
+        x: 1449
+        y: 128
+        width: 1345
+        height: 2564
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 21affb0caa7dc6760800000000000000
-      internalID: 7452568611769547282
+      spriteID: 949796ff791bd7230800000000000000
+      internalID: 3638259340368509257
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MalePunch_spritesheet_edit2_2
+      name: ClubLady_idle_spritesheet_2
       rect:
         serializedVersion: 2
-        x: 1494
-        y: 84
-        width: 686
-        height: 900
+        x: 2848
+        y: 123
+        width: 1243
+        height: 2615
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,8 +168,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6c01cd043cac55e80800000000000000
-      internalID: -8190417407347781434
+      spriteID: 81744d636bf17bd40800000000000000
+      internalID: 5599979529122891544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ClubLady_idle_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 4192
+        y: 130
+        width: 1243
+        height: 2615
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f345c60a29c5b7060800000000000000
+      internalID: 6952252234602927167
       vertices: []
       indices: 
       edges: []
@@ -185,9 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MalePunch_spritesheet_edit2_0: -9222495590898387357
-      MalePunch_spritesheet_edit2_1: 7452568611769547282
-      MalePunch_spritesheet_edit2_2: -8190417407347781434
+      ClubLady_idle_spritesheet_0: 4530698040277511799
+      ClubLady_idle_spritesheet_1: 3638259340368509257
+      ClubLady_idle_spritesheet_2: 5599979529122891544
+      ClubLady_idle_spritesheet_3: 6952252234602927167
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

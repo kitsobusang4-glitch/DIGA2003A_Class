@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 805abed72cbd66a42b23cde8c1a9032b
+guid: 828494415749d5f488327295ad411cd6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 527011157447994887
-    second: Thug_Kick_spritesheet 1_0
+      213: -2002533378645371161
+    second: Thug_idle_spritesheet_0
   - first:
-      213: 8948416014066323598
-    second: Thug_Kick_spritesheet 1_1
+      213: 6007570810652672224
+    second: Thug_idle_spritesheet_1
+  - first:
+      213: 2878008618503739080
+    second: Thug_idle_spritesheet_2
+  - first:
+      213: 3418799136097824088
+    second: Thug_idle_spritesheet_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Thug_Kick_spritesheet 1_0
+      name: Thug_idle_spritesheet_0
       rect:
         serializedVersion: 2
-        x: 74
-        y: 34
-        width: 894
-        height: 980
+        x: 31
+        y: 126
+        width: 1175
+        height: 3264
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 70eea500bd1505700800000000000000
-      internalID: 527011157447994887
+      spriteID: 7e6daf280829534e0800000000000000
+      internalID: -2002533378645371161
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Thug_Kick_spritesheet 1_1
+      name: Thug_idle_spritesheet_1
       rect:
         serializedVersion: 2
-        x: 1020
-        y: 32
-        width: 496
-        height: 1006
+        x: 1238
+        y: 133
+        width: 1175
+        height: 3265
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +146,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e8017dc34f82f2c70800000000000000
-      internalID: 8948416014066323598
+      spriteID: 0e045f3a2dd2f5350800000000000000
+      internalID: 6007570810652672224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thug_idle_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 2440
+        y: 130
+        width: 1197
+        height: 3294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c69d66179db0f720800000000000000
+      internalID: 2878008618503739080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thug_idle_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 3664
+        y: 132
+        width: 1197
+        height: 3295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85de58163b3027f20800000000000000
+      internalID: 3418799136097824088
       vertices: []
       indices: 
       edges: []
@@ -160,8 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Thug_Kick_spritesheet 1_0: 527011157447994887
-      Thug_Kick_spritesheet 1_1: 8948416014066323598
+      Thug_idle_spritesheet_0: -2002533378645371161
+      Thug_idle_spritesheet_1: 6007570810652672224
+      Thug_idle_spritesheet_2: 2878008618503739080
+      Thug_idle_spritesheet_3: 3418799136097824088
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

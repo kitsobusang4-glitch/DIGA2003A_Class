@@ -58,8 +58,9 @@ public class Player : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Money"))
         {
+           mm.moneyCount++;
            Destroy(other.gameObject);
-            mm.moneyCount++;
+            
         }
     }
 
