@@ -716,6 +716,44 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4797702785658462078, guid: 0ceb14f559d9a2f45a5f18c31d8b1c4a, type: 3}
   m_PrefabInstance: {fileID: 9086372305350944778}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &559853112
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559853111}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aae9702f504c80f459273744302cbd74, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!111 &559853113
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559853111}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 7400000, guid: 2bf76bf8aa866fa4c809232288e826dd, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
 --- !u!1 &587890802
 GameObject:
   m_ObjectHideFlags: 0
@@ -6261,7 +6299,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4797702785658462078, guid: 0ceb14f559d9a2f45a5f18c31d8b1c4a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 559853112}
+    - targetCorrespondingSourceObject: {fileID: 4797702785658462078, guid: 0ceb14f559d9a2f45a5f18c31d8b1c4a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 559853113}
   m_SourcePrefab: {fileID: 100100000, guid: 0ceb14f559d9a2f45a5f18c31d8b1c4a, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

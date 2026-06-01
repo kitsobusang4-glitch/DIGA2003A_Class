@@ -3887,6 +3887,7 @@ GameObject:
   - component: {fileID: 1465903227}
   - component: {fileID: 1465903226}
   - component: {fileID: 1465903228}
+  - component: {fileID: 1465903229}
   m_Layer: 0
   m_Name: ThugNPC_0
   m_TagString: Untagged
@@ -4005,6 +4006,28 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 11.751258, y: 32.649998}
   m_Direction: 0
+--- !u!95 &1465903229
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465903225}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aae9702f504c80f459273744302cbd74, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1473151372
 GameObject:
   m_ObjectHideFlags: 0
