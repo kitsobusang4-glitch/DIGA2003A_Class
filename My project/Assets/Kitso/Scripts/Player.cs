@@ -8,12 +8,20 @@ public class Player : MonoBehaviour
     bool isRunning = false;
     bool isBackwalk = false;
     public MoneyManager mm;
-    
+    AudioSource audioSource;
+    SpriteRenderer spriteRenderer;
+
     void Start()
     {
         animator = GetComponent<Animator>();
-    }
+        audioSource = GetComponent<AudioSource>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
 
+        if (audioSource != null)
+        {
+            audioSource.loop = true; // keep footstep sound playing while moving
+        }
+    }
 
     void Update()
     {
@@ -21,8 +29,8 @@ public class Player : MonoBehaviour
         isWalking = false;
         isRunning = false;
         isBackwalk = false;
-        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
 
+        // build movement flags
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             moveDirection.y += 1;
@@ -37,31 +45,41 @@ public class Player : MonoBehaviour
         {
             moveDirection.x -= 1;
             isWalking = true;
-            //transform.localScale = new Vector3(-1, transform.localScale.y);
-            spriteRenderer.flipX = true;
+            if (spriteRenderer != null) spriteRenderer.flipX = true;
         }
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             moveDirection.x += 1;
             isWalking = true;
-            //transform.localScale = new Vector3(1, transform.localScale.y);
-            spriteRenderer.flipX = false;
+            if (spriteRenderer != null) spriteRenderer.flipX = false;
         }
+
+        // audio: play/stop only once per state change and based on whether we are moving
+        bool isMoving = moveDirection != Vector3.zero;
+        if (audioSource != null)
+        {
+            if (isMoving)
+            {
+                if (!audioSource.isPlaying) audioSource.Play();
+            }
+            else
+            {
+                if (audioSource.isPlaying) audioSource.Stop();
+            }
+        }
+
         transform.position += moveDirection.normalized * moveSpeed * Time.deltaTime;
-        
         animator.SetBool("RunRun", isWalking);
         animator.SetBool("ForwardWalk", isRunning);
         animator.SetBool("BackwardWalk", isBackwalk);
     }
-    
+
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.CompareTag("Money"))
+        if (other.gameObject.CompareTag("Money"))
         {
-           mm.moneyCount++;
-           Destroy(other.gameObject);
-            
+            mm.moneyCount++;
+            Destroy(other.gameObject);
         }
     }
-
 }

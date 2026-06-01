@@ -17,7 +17,7 @@ public class BattleSystem : MonoBehaviour
     public static event Action OnEnemyDeath;
     public Transform playerBattleStation;
     public Transform enemyBattleStation;
-
+    AudioSource audioSource;
     Unit playerUnit;
     Unit enemyUnit;
 
@@ -29,11 +29,14 @@ public class BattleSystem : MonoBehaviour
     public BattleState state;
 
     public Animator enemyAnimator;
+    public AudioClip enemyPunchSFX;
+    public AudioClip enemyKickSFX;
 
     void Start()
     {
         state = BattleState.START;
         StartCoroutine(SetupBattle());
+        audioSource = GetComponent<AudioSource>();
     }
 
     IEnumerator SetupBattle()
@@ -49,7 +52,7 @@ public class BattleSystem : MonoBehaviour
         playerHUD.SetHUD(playerUnit);
         enemyHUD.SetHUD(enemyUnit);
 
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3f);
 
         state = BattleState.PLAYERTURN;
         PlayerTurn();
@@ -68,7 +71,7 @@ public class BattleSystem : MonoBehaviour
         playerHUD.SetHP(playerUnit.currentHP);
         dialogueText.text = "A sip of the medicine has healed you up!";
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
 
         state = BattleState.ENEMYTURN;
         StartCoroutine(EnemyTurn());
@@ -86,7 +89,7 @@ public class BattleSystem : MonoBehaviour
         dialogueText.text = "The attack is successful";
         
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
 
         // Check if the enemy is dead
         if (isDead)
@@ -116,7 +119,7 @@ public class BattleSystem : MonoBehaviour
         playerPrefab.GetComponent<Animator>().Play("PlayerKick");
         dialogueText.text = "The kick attack is successful";
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
 
         // Check if the enemy is dead
         if (isDead)
@@ -134,7 +137,7 @@ public class BattleSystem : MonoBehaviour
             StartCoroutine(EnemyTurn());
         }
 
-        // Change state based on what happened
+        
     }
 
     public enum EnemyAttacks
@@ -148,6 +151,12 @@ public class BattleSystem : MonoBehaviour
         if (attacks == EnemyAttacks.Punch)
         {
             enemyAnimator.SetTrigger("EnemyPunch");
+
+            // Plays SFX from code when the trigger is set.
+            if (audioSource != null && enemyPunchSFX != null)
+            {
+                audioSource.PlayOneShot(enemyPunchSFX);
+            }
 
             yield return new WaitForSeconds(1f);
 
@@ -164,6 +173,12 @@ public class BattleSystem : MonoBehaviour
         else if (attacks == EnemyAttacks.kick)
         {
             enemyAnimator.SetTrigger("EnemyKick");
+
+        
+            if (audioSource != null && enemyKickSFX != null)
+            {
+                audioSource.PlayOneShot(enemyKickSFX);
+            }
 
             yield return new WaitForSeconds(1f);
 
@@ -191,6 +206,21 @@ public class BattleSystem : MonoBehaviour
             PlayerTurn();
         }
     }
+
+    
+    
+    public void PlayEnemyPunchSFX()
+    {
+        if (audioSource != null && enemyPunchSFX != null)
+            audioSource.PlayOneShot(enemyPunchSFX);
+    }
+
+    public void PlayEnemyKickSFX()
+    {
+        if (audioSource != null && enemyKickSFX != null)
+            audioSource.PlayOneShot(enemyKickSFX);
+    }
+
     void EndBattle()
     {
         if (state == BattleState.WON)
@@ -223,6 +253,7 @@ public class BattleSystem : MonoBehaviour
 
         StartCoroutine(PlayerHeal());
     }
+
 
     IEnumerator Delayer()
     {

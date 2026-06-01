@@ -4,7 +4,7 @@ public class Damage : MonoBehaviour
 {
     public int damage = 50;
     public Health playerHealth;
-
+    public AudioSource damageSound;
     void Start()
     {
         
@@ -22,6 +22,7 @@ public class Damage : MonoBehaviour
         {
             playerHealth = (Health)collision.gameObject.GetComponent<Health>();
             playerHealth.TakeDamage(damage);
+            damageSound.Play();
         }
     }
 }
